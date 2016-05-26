@@ -1,7 +1,7 @@
 
 
 
-from adapters.pami_adapter import *
+from src.adapters.pami_adapter import *
 
 pami = PamiAdapter()
 pami.parse()

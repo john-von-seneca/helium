@@ -5,7 +5,9 @@ class PamiAdapter(Adapter):
 	URL = 'https://www.computer.org/csdl/trans/tp/index.html'
 	URL_ROOT = 'https://www.computer.org'
 	def __init__(self):
+		print('pami-adapter')
 		self.soup = None
+		Adapter.__init__(self)
 
 	def parse(self):
 		self.soup = Adapter.parse(self,
