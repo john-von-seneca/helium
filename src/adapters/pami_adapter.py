@@ -45,9 +45,16 @@ class PamiAdapter(Adapter):
 			issues_current = self._get_issues(info_volume['href'])
 			info_volume['issues'] = issues_current
 		return info_volumes
-			
 
-	
-			
-
+	def _get_toc_of_issue(self, url):
+		soup = self.parse(url)
+		div_papers = soup.find_all('div', 'tableOfContentsLineItem')
+		toc = []
+		for ix, paper in enumerate(div_papers):
+			titles = paper.find_all('div', 'tableOfContentsLineItemTitle')
+			title = titles[0].find_all('a')[0].get_text()
+			creators = [a.find_all('a')[0].get_text() for a in
+						paper.find_all('div', 'tableOfContentsLineItemCreator')]
+			toc.append({'title': title, 'authors': creators})
+		return toc
 	
