@@ -22,9 +22,18 @@ class Adapter:
 		query_s = search_query.lower()
 		articles_filtered = [art for art in articles if self._is_match(art, query_s)]
 		return articles_filtered
+
+	def send_query(self):
+		# self.querier.send_query(self.query)
+		self.querier.clear_articles()
+		self.querier.query = self.query
+		url = self.query.get_url()
+		# html = self.querier._get_http_response(url=url,log_msg='dump of query response HTML', err_msg='results retrieval failed')
+		html = self.downloader.get2(url)
+		self.querier.parse(html)
 		
 	def query_scholar(self, search_query):
 		self.query.set_phrase(search_query)
-		self.querier.send_query(self.query)
+		self.send_query()
 		return self._filtered_articles(search_query, self.querier.articles)
 		
