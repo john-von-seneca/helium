@@ -1,0 +1,92 @@
+
+start-yo.py,81
+class Animal:Animal3,2
+	def __init__(4,16
+class Dog(7,64
+	def __init__(8,83
+
+3rd-party/scholar.py/scholar.py,2672
+    def encode(191,7491
+class Error(198,7655
+class FormatError(202,7725
+class QueryArgumentError(206,7818
+class ScholarConf(210,7913
+class ScholarUtils(226,8500
+    def ensure_int(235,8729
+    def log(242,8886
+class ScholarArticle(251,9169
+    def __init__(256,9331
+    def __getitem__(278,10315
+    def __len__(283,10436
+    def __setitem__(286,10491
+    def __delitem__(292,10671
+    def set_citation_data(296,10766
+    def as_txt(299,10858
+    def as_csv(311,11313
+    def as_citation(322,11755
+class ScholarArticleParser(331,12046
+    def __init__(337,12298
+    def handle_article(343,12497
+    def handle_num_results(349,12691
+    def parse(356,12952
+    def _clean_article(374,13626
+    def _parse_globals(383,13933
+    def _parse_article(399,14663
+    def _parse_links(421,15528
+    def _tag_has_class(461,17395
+    def _tag_results_checker(474,17838
+    def _as_int(479,17992
+    def _path2url(485,18107
+    def _strip_url_arg(493,18364
+class ScholarArticleParser120201(505,18741
+    def _parse_article(510,18905
+class ScholarArticleParser120726(531,19732
+    def _parse_article(536,19901
+class ScholarQuery(597,22725
+    def __init__(601,22838
+    def set_num_page_results(615,23371
+    def get_url(619,23566
+    def _add_attribute_type(627,23797
+    def __getitem__(639,24278
+    def __setitem__(645,24470
+    def _parenthesize_phrases(650,24648
+class ClusterScholarQuery(675,25349
+    def __init__(684,25619
+    def set_cluster(690,25818
+    def get_url(697,26043
+class SearchScholarQuery(710,26432
+    def __init__(730,27124
+    def set_words(744,27673
+    def set_words_some(748,27798
+    def set_words_none(752,27942
+    def set_phrase(756,28082
+    def set_scope(760,28214
+    def set_author(767,28402
+    def set_pub(771,28533
+    def set_timeframe(775,28655
+    def set_include_citations(786,29039
+    def set_include_patents(789,29127
+    def get_url(792,29211
+class ScholarSettings(831,30929
+    def __init__(844,31279
+    def set_citation_format(849,31458
+    def set_per_page_results(857,31785
+    def is_configured(864,32124
+class ScholarQuerier(868,32190
+    class Parser(895,33106
+        def __init__(896,33152
+        def handle_num_results(900,33279
+        def handle_article(904,33471
+    def __init__(907,33553
+    def apply_settings(926,34322
+    def send_query(978,36309
+    def get_citation_data(994,36828
+    def parse(1015,37651
+    def add_article(1022,37826
+    def clear_articles(1026,37929
+    def save_cookies(1030,38060
+    def _get_http_response(1046,38620
+def txt(1075,39756
+def csv(1100,40765
+def citation_export(1107,40969
+def main(1113,41098
