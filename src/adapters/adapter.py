@@ -7,6 +7,6 @@ class Adapter:
 		self.downloader = Downloader()
 
 	def parse(self, url):
-		html = self.downloader.get(self, url)
+		html = self.downloader.get(url)
 		soup = BeautifulSoup(html, 'html.parser')
 		return soup
